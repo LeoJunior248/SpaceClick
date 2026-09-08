@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/GALAXIA ICON.png">
+    <title>SPACE CLICK</title>
+
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+
+    <div class="menu-btn" onclick="abrirMenu()">☰</div>
+
+    <div class="sidebar" id="sidebar">
+        <a href="./pages/lojinha.html">Loja 🛒</a>
+        <a href="./pages/infoplanetas.html">Informações Planetas</a>
+        <a href="./pages/formulario.html">Faça parte da equipe</a>
+        <a href="./pages/sobre.html">Sobre</a>
+        <a href="./pages/landingPage.html">Landing Page</a>
+    </div>
+
+    <main>
+        <h1>Explore o Sistema Solar</h1>
+        <br><br><br><br>
+        <div class="sistema" style="text-align: center;">
+
+
+            <figure>
+                <a href="./pages/solInfo.html">
+                    <img src="./images/SOL EM HD.png" class="sol-lateral"
+                        onmouseover="mostrarInfo('Sol: A estrela no centro do Sistema Solar ☀️')"
+                        onmouseout="limparInfo()">
+                </a>
+            </figure>
+
+            <figure>
+                <a href="./pages/mercurioInfo.html">
+                    <img src="./images/MERCURIO IMAGEM.jpg" class="planeta" style="width:40px"
+                        onmouseover="mostrarInfo('Mercúrio: O menor planeta ☀️')" onmouseout="limparInfo()">
+                </a>
+                <figcaption>Mercúrio</figcaption>
+            </figure>
+
+            <figure>
+                <a href="./pages/venusInfo.html">
+                    <img src="./images/VENUS IMAGEM.jpg" class="planeta" style="width:70px"
+                        onmouseover="mostrarInfo('Vênus: O planeta mais quente 🔥')" onmouseout="limparInfo()">
+                </a>
+                <figcaption>Vênus</figcaption>
+            </figure>
+
+            <figure>
+                <a href="./pages/terraInfo.html">
+                    <img src="./images/TERRA IMAGEM.jpg" class="planeta" style="width:75px"
+                        onmouseover="mostrarInfo('Terra: Nosso planeta 🌍')" onmouseout="limparInfo()">
+                </a>
+                <figcaption>Terra</figcaption>
+            </figure>
+
+            <figure>
+                <a href="./pages/marteInfo.html">
+                    <img src="./images/MARTE IMAGEM.jpg" class="planeta" style="width:55px"
+                        onmouseover="mostrarInfo('Marte: O planeta vermelho 🔴')" onmouseout="limparInfo()">
+                </a>
+                <figcaption>Marte</figcaption>
+            </figure>
+
+            <figure>
+                <a href="./pages/jupiterInfo.html">
+                    <img src="./images/JUPITER IMAGEM.jpg" class="planeta" style="width:140px"
+                        onmouseover="mostrarInfo('Júpiter: O maior planeta 🟠')" onmouseout="limparInfo()">
+                </a>
+                <figcaption>Júpiter</figcaption>
+            </figure>
+
+            <figure>
+                <a href="./pages/saturnoInfo.html">
+                    <img src="./images/SATURNO.png" class="planeta" style="width:130px"
+                        onmouseover="mostrarInfo('Saturno: O planeta dos anéis 💍')" onmouseout="limparInfo()">
+                </a>
+                <figcaption>Saturno</figcaption>
+            </figure>
+
+            <figure>
+                <a href="./pages/uranoInfo.html">
+                    <img src="./images/URANO IMAGEM.jpg" class="planeta" style="width:90px"
+                        onmouseover="mostrarInfo('Urano: Um planeta gelado ❄️')" onmouseout="limparInfo()">
+                </a>
+                <figcaption>Urano</figcaption>
+            </figure>
+
+            <figure>
+                <a href="./pages/netunoInfo.html">
+                    <img src="./images/NETUNO IMAGEM.jpg" class="planeta" style="width:85px"
+                        onmouseover="mostrarInfo('Netuno: O mais distante 🌊')" onmouseout="limparInfo()">
+                </a>
+                <figcaption>Netuno</figcaption>
+            </figure>
+        </div>
+
+        <div style="text-align: center;">
+            <div class="info" id="info">
+                Clique em um planeta para ver informações
+            </div>
+        </div>
+
+        <div class="mapa-container">
+            <h2>Explore nossa loja </h2>
+            <div class="foguete-wrapper">
+                <img src="images/cliqueloja.png" alt="Foguete Interativo" width="400" height="400" usemap="#foguete-map"
+                    class="foguete-img">
+
+                <map name="foguete-map">
+                    <area shape="rect" coords="0,0,400,400" alt="Loja" href="pages/lojinha.html" title="Ir para a Loja">
+                </map>
+            </div>
+        </div>
+
+    </main>
+
+    <footer style="text-align: center; margin-top: 50px; font-weight: 300; font-size: 0.8rem; color: #888;">
+        © 2026 ClickSpace — Projeto Acadêmico 1º Semestre - Universidade Fumec
+    </footer>
+
+
+
+    <script>
+        function mostrarInfo(texto) {
+            document.getElementById("info").innerText = texto;
+        }
+
+        function limparInfo() {
+            document.getElementById("info").innerText =
+                "Passe o mouse sobre um planeta para ver informações";
+        }
+
+        function abrirMenu(Menu) {
+            document.getElementById("sidebar").classList.toggle("active");
+        }
+    </script>
+
+</body>
+
+</html>
