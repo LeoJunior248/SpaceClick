@@ -1,32 +1,73 @@
- # 🚀 SpaceClick
+<div align="center">
 
-Website interativo sobre o sistema solar, com uma loja integrada, desenvolvido como projeto acadêmico.
+# 🌌 SpaceClick
 
-## 🌌 Sobre o projeto
+### Projeto Final de Introdução à Programação Web
 
-O SpaceClick é um site interativo desenvolvido para apresentar informações sobre o sistema solar e seus planetas.
+Uma plataforma educativa e interativa para explorar os planetas e corpos celestes do Sistema Solar.
 
-O projeto permite que o usuário explore diferentes planetas, consulte informações sobre eles e também navegue por uma loja integrada ao site.
+🚀 **Acesse o projeto:** https://spaceclickk.netlify.app/
+
+</div>
+
+---
+
+## 📖 Sobre
+
+O **Sistema Solar** é um projeto acadêmico desenvolvido para aplicar os conceitos de desenvolvimento web aprendidos durante a disciplina de **Introdução à Programação Web**.
+
+A aplicação apresenta informações sobre os planetas do Sistema Solar de forma visual, intuitiva e acessível, promovendo o aprendizado de astronomia através da tecnologia.
+
+---
 
 ## ✨ Funcionalidades
 
-- 🌍 Visualização dos planetas
-- 🪐 Informações sobre os planetas
-- 🔭 Exploração do sistema solar
-- 🛒 Loja integrada
-- 💻 Interface interativa
+* 🌍 Informações sobre os planetas do Sistema Solar
+* 🌙 Dados sobre satélites naturais
+* 📱 Interface responsiva
+* 🎨 Design moderno e intuitivo
+* ⚡ Navegação simples e dinâmica
 
-## 🛠️ Tecnologias utilizadas
+---
 
-- HTML
-- CSS
-- JavaScript
+## 🛠️ Tecnologias Utilizadas
 
-## 🎓 Projeto acadêmico
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white">
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white">
+</p>
 
-Projeto desenvolvido durante o curso de **Ciência da Computação**.
-Pela matéria Introdução Web
+---
 
-## 👨‍💻 Autor
+## 👥 Equipe
 
-Leonardo Júnior
+| Integrante                   | Função                                   |
+| ---------------------------- | ---------------------------------------- |
+| João Vitor Oliveira Ferreira | Tech Lead                                |
+| Leonardo Ferreira Guimarães  | Desenvolvedor Front-End                  |
+| Henrique Gomes Soares        | Desenvolvedor Front-End e Design Gráfico |
+| Pedro Santos Nonaka          | Redator de Conteúdo                      |
+| Samuel Marinho               | Desenvolvedor Front-End                  |
+
+---
+
+## 🎓 Disciplina
+
+**Introdução à Programação Web**
+
+---
+
+## 📅 Ano
+
+2026
+
+---
+
+<div align="center">
+
+⭐ Desenvolvido como projeto acadêmico para fins educacionais.
+
+</div>
