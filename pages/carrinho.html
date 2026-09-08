@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho Espacial</title>
+
+    <link rel="stylesheet" href="../css/carrinho.css">
+    <link rel="icon" href="../images/GALAXIA ICON.png"> 
+</head>
+
+<body>
+
+    <h1>🛒 Carrinho Espacial</h1>
+
+    <div id="lista"></div>
+
+    <div id="container-total" style="margin: 20px 0; font-size: 1.3rem; font-weight: bold; color: #fff;">
+        Total do Carrinho: <span id="valor-total" style="color: #00ff88;">R$ 0,00</span>
+    </div>
+
+    <div class="acoes">
+
+        <button class="limpar" onclick="limparCarrinho()">
+            Limpar Carrinho
+        </button>
+
+        <br><br>
+
+        <a class="voltar" href="./lojinha.html">
+            Voltar para Loja
+        </a>
+
+    </div>
+
+    <script>
+
+        function carregarCarrinho() {
+
+            let carrinho =
+                JSON.parse(localStorage.getItem("carrinho")) || [];
+
+            let lista =
+                document.getElementById("lista");
+            
+            let valorTotalElemento = 
+                document.getElementById("valor-total");
+
+            lista.innerHTML = "";
+
+            if (carrinho.length === 0) {
+
+                lista.innerHTML =
+                    "<h2 class='carrinho-vazio'>Seu carrinho está vazio.</h2>";
+                
+                valorTotalElemento.innerText = "R$ 0,00"; 
+                return;
+            }
+
+            let precoFixo = 150.00; 
+            let total = 0;
+
+            carrinho.forEach((item, index) => {
+                
+                let nomeItem = item.nome || item; 
+
+                total += precoFixo; 
+
+                lista.innerHTML += `
+                    <div class="item">
+
+                        <span>${nomeItem} - R$ ${precoFixo.toFixed(2).replace('.', ',')}</span>
+
+                        <button
+                            class="remover"
+                            onclick="removerItem(${index})">
+                            Remover
+                        </button>
+
+                    </div>
+                `;
+            });
+
+            valorTotalElemento.innerText = `R$ ${total.toFixed(2).replace('.', ',')}`;
+        }
+
+        function removerItem(index) {
+
+            let carrinho =
+                JSON.parse(localStorage.getItem("carrinho")) || [];
+
+            carrinho.splice(index, 1);
+
+            localStorage.setItem(
+                "carrinho",
+                JSON.stringify(carrinho)
+            );
+
+            carregarCarrinho();
+        }
+
+        function limparCarrinho() {
+
+            localStorage.removeItem("carrinho");
+
+            carregarCarrinho();
+        }
+
+        carregarCarrinho();
+
+    </script>
+
+</body>
+
+</html>
